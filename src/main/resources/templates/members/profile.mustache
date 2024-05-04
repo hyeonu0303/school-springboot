@@ -1,0 +1,14 @@
+{{>layout/header}}
+<div class="container mt-5">
+  <h1>Members Profile</h1>
+  <div>
+    {{#members}}
+      <div class="d-flex mt-1">
+          ID: {{id}}, Name: {{name}}, User ID: {{userId}}, Email: {{email}}, Phone Number: {{phoneNumber}}, Address: {{address}}
+          <button class="btn btn-outline-success ms-3" onClick="location.href='/members/edit/{{id}}'">수정</button>
+          <button class="btn btn-outline-danger ms-1" onClick="location.href='/members/delete/{{id}}'">삭제</button>
+      </div>
+      <hr/>
+    {{/members}}
+  </div>
+</div>

@@ -1,0 +1,10 @@
+﻿
+html, body{
+    font-family: 'Pretendard';
+    font-size: larger;
+    height:100vh;
+}
+
+.main {
+    padding-top: 50px;
+}
